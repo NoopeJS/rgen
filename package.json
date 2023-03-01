@@ -1,0 +1,38 @@
+{
+    "name": "@noopejs/rgen",
+    "version": "1.1.3",
+    "private": false,
+    "license": "MIT",
+    "type": "module",
+    "publishConfig": {
+        "access": "public"
+    },
+    "author": {
+        "name": "NoopeJS: Obaid Qatan",
+        "email": "ogaten27@gmail.com"
+    },
+    "description": "The React Gen CLI to build your next application faster.",
+    "keywords": [
+        "react",
+        "react-gen",
+        "rgen",
+        "typescript",
+        "noopejs"
+    ],
+    "bin": {
+        "rgen": "index.js"
+    },
+    "main": "index.js",
+    "typings": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NoopeJS/rgen.git"
+    },
+    "peerDependencies": {
+        "colors": "^1.4.0",
+        "commander": "^10.0.0",
+        "fs-extra": "^11.1.0",
+        "ora": "^6.1.2"
+    },
+    "preferGlobal": true
+}
