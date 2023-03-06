@@ -1,8 +1,8 @@
 import { Injectable } from "@noopejs/react-gen/Injectable";
 
-@Injectable(["$2Module"])
-export class $2Service {
-  private message: string = "Hello Mama I'm $2";
+@Injectable([])
+export class $capitalizedService {
+  private message: string = "Hello Mama I'm $regularized";
   public getMessage(): string {
     return this.message;
   }

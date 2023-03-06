@@ -1,3 +1,4 @@
+export type IUnit = 'moduleClass' | 'service' | 'moduleComponent';
 export declare function runInDir(command: string, dir: string): Promise<unknown>;
 export declare function promptUser(message: string): Promise<string>;
 export declare function minifyReactChunks(srcDir: string, outDir: string): Promise<void>;
@@ -5,3 +6,15 @@ export declare function getViteDevPort(): Promise<any>;
 export declare function getVitePreviewPort(): Promise<any>;
 export declare function camelCase(str: string): string;
 export declare function capitalize(str: string): string;
+export declare function kebabCase(str: string): string;
+export declare function regularCase(str: string): string;
+export declare function parseTemplateString(template: string, name: string): string;
+export declare function getUnitName(name: string, type: IUnit | string): string;
+export declare function getAvailableTypes(): {
+    APP: string;
+    MODULE: string;
+    MODULE_CLASS: string;
+    SERVICE: string;
+    MODULE_COMPONENT: string;
+};
+export declare function getAvailableUnits(): IUnit[];
